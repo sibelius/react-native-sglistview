@@ -1,29 +1,11 @@
 {
   "name": "react-native-sglistview",
-  "version": "0.3.2",
   "description": "A React Native module to provide a memory efficent ListView over the native implementation",
-  "main": "lib/index.js",
-  "scripts": {
-    "build": "./node_modules/.bin/babel --source-maps=true --out-dir=dist lib",
-    "posttest": "mv .babelrc babelrc",
-    "pretest": "mv babelrc .babelrc && eslint lib test && npm run build",
-    "test": "./node_modules/.bin/mocha || mv .babelrc babelrc",
-    "x": "open example/ios/AwesomeProject.xcodeproj"
-  },
-  "keywords": [
-    "ReactNative",
-    "ListView"
-  ],
+  "version": "0.3.2",
   "author": {
     "name": "Shaheen Ghiassy",
     "email": "shaheen.ghiassy@gmail.com",
     "url": "http://shaheenghiassy.com"
-  },
-  "license": "MIT",
-  "homepage": "https://github.com/sghiassy/react-native-sglistview",
-  "peerDependencies": {
-    "react-native": ">=0.25.0",
-    "react": ">=0.14.0 || ^15.0.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -46,5 +28,23 @@
     "*.js",
     "dist",
     "lib"
-  ]
+  ],
+  "homepage": "https://github.com/sghiassy/react-native-sglistview",
+  "keywords": [
+    "ListView",
+    "ReactNative"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "peerDependencies": {
+    "react": ">=0.14.0 || ^15.0.0",
+    "react-native": ">=0.25.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/babel --source-maps=true --out-dir=dist lib",
+    "posttest": "mv .babelrc babelrc",
+    "pretest": "mv babelrc .babelrc && eslint lib test && npm run build",
+    "test": "./node_modules/.bin/mocha || mv .babelrc babelrc",
+    "x": "open example/ios/AwesomeProject.xcodeproj"
+  }
 }
